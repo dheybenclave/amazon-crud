@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.017 s <<< FAILURE! - in serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
+Login to Amazon.Login to Amazaon Website  Time elapsed: 1.8 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 85
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DHEYCLAVERIA', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x007BC933+3131699]
+	Ordinal0 [0x006A9EC1+2006721]
+	Ordinal0 [0x0054AE28+568872]
+	Ordinal0 [0x004D13BF+70591]
+	Ordinal0 [0x004CCC83+52355]
+	Ordinal0 [0x004F0E2C+200236]
+	Ordinal0 [0x004F0C4D+199757]
+	Ordinal0 [0x004EEB3B+191291]
+	Ordinal0 [0x004D2E97+77463]
+	Ordinal0 [0x004D3E5E+81502]
+	Ordinal0 [0x004D3DE9+81385]
+	Ordinal0 [0x006C0A79+2099833]
+	GetHandleVerifier [0x0092AC3A+1396666]
+	GetHandleVerifier [0x0092A8B9+1395769]
+	GetHandleVerifier [0x00936536+1444022]
+	GetHandleVerifier [0x0092B1C8+1398088]
+	Ordinal0 [0x006B7D41+2063681]
+	Ordinal0 [0x006C208B+2105483]
+	Ordinal0 [0x006C21B1+2105777]
+	Ordinal0 [0x006D4754+2180948]
+	BaseThreadInitThunk [0x76E9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x772F7C7E+286]
+	RtlGetAppContainerNamedObjectPath [0x772F7C4E+238]
+
+

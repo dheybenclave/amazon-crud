@@ -1,2 +1,4 @@
 serenity_cucumber\amazon_crud\acceptancetests\AcceptanceTestSuite.class
-serenity_cucumber\amazon_crud\steps\MathsStepDefinitions.class
+serenity_cucumber\amazon_crud\stepdefinitions\login.class
+pages\HomePage.class
+pages\HomePage_commands.class
