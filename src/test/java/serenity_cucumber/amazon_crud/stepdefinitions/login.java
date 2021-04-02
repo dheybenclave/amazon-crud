@@ -18,21 +18,18 @@ public class login {
 
 	@Managed
 	WebDriver driver;
+//
+//	@BeforeClass
+//	public static void setupClass() {
+//		WebDriverManager.chromedriver().clearDriverCache();
+//		WebDriverManager.chromedriver().setup();
+//	}
 
-	@BeforeClass
-	public static void setupClass() {
-		WebDriverManager.chromedriver().clearDriverCache();
-		WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
-
-	}
-
-	@Before
-	public void setupTest() {
-		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
-		driver = new ChromeDriver();
-
-	}
+//	@Before
+//	public void setupTest() {
+//		driver = new ChromeDriver();
+//
+//	}
 
 	@After
 	public void teardown() {
