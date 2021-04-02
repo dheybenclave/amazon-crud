@@ -17,7 +17,6 @@ public class HomePage_commands extends PageObject {
 	
 		
 	}
-	
 
 	public void setText(String selector, String value) {
 

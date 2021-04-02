@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.363 s <<< FAILURE! - in serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
-Login to Amazon.Login to Amazaon Website  Time elapsed: 0.406 s  <<< ERROR!
-java.lang.IllegalStateException: The driver executable does not exist: Z:\path\to\driver
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.651 s - in serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
