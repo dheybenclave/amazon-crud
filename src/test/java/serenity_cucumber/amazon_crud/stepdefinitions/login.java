@@ -3,12 +3,10 @@ package serenity_cucumber.amazon_crud.stepdefinitions;
 import org.junit.*;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -40,6 +38,7 @@ public class login {
 
 	@Steps
 	HomePage home;
+
 
 	@Given("user in the home page")
 	public void user_in_the_home_page() {
