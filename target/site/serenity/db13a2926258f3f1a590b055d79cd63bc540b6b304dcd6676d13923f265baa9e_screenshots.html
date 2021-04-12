@@ -157,7 +157,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-04-2021 21:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-04-2021 17:00</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Login to Amazaon Website
+                                <span class="error-color">Login to Amazaon Website
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,13 +211,52 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Null pointer exception: Cannot invoke 'String.startsWith(String)' because 'xpathOrCssSelector' is null</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.NullPointerException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>customCommands.customCommands.map(customCommands.java:66)<br />pages.LoginPage.doLogin(LoginPage.java:36)<br />serenity_cucumber.amazon_crud.stepdefinitions.login.user_enter_as_username_and_enter_as_password(login.java:105)<br />✽.user enter "dheyserenitybdd@gmail.com" as username and enter "config.serenitybdd" as password(file:///Z:/Automation/JavaCucumber/Login/amazon-crud/src/test/resources/features/login/login.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource16388757092410368308.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1aaa5d1738069debcdf481bd4bd370fe3bbf30565a97683fec4002551dbb66a5.png" title=" Given user in the home page" width="1920"/>
-                <img src="1aaa5d1738069debcdf481bd4bd370fe3bbf30565a97683fec4002551dbb66a5.png" title=" open applicaiton" width="1920"/>
-                <img src="1aaa5d1738069debcdf481bd4bd370fe3bbf30565a97683fec4002551dbb66a5.png" title=" Given user in the home page (completed)" width="1920"/>
-                <img src="1aaa5d1738069debcdf481bd4bd370fe3bbf30565a97683fec4002551dbb66a5.png" title=" When user enter &quot;admin&quot; as username and enter &quot;admin&quot; as password" width="1920"/>
-                <img src="1aaa5d1738069debcdf481bd4bd370fe3bbf30565a97683fec4002551dbb66a5.png" title=" Then user should able to login: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="c4b4c06d974d49acd109dc1f5321df84878f4810d2d16c55e86b8298521599ad.png" title=" Given user in the home page" width="1920"/>
+                <img src="c4b4c06d974d49acd109dc1f5321df84878f4810d2d16c55e86b8298521599ad.png" title=" Open Applicaiton" width="1920"/>
+                <img src="c4b4c06d974d49acd109dc1f5321df84878f4810d2d16c55e86b8298521599ad.png" title=" Given user in the home page (completed)" width="1920"/>
+                <img src="c4b4c06d974d49acd109dc1f5321df84878f4810d2d16c55e86b8298521599ad.png" title=" When user enter &quot;dheyserenitybdd@gmail.com&quot; as username and enter &quot;config.serenitybdd&quot; as password" width="1920"/>
+                <img src="c4b4c06d974d49acd109dc1f5321df84878f4810d2d16c55e86b8298521599ad.png" title=" Login Credentails: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

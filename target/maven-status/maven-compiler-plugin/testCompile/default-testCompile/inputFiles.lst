@@ -1,4 +1,10 @@
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\selectors\loginPageSelector.java
 Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\serenity_cucumber\amazon_crud\stepdefinitions\login.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\customCommands\customCommands.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\selectors\homePageSelector.java
 Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\serenity_cucumber\amazon_crud\acceptancetests\AcceptanceTestSuite.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\commands\homePage.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\commands\loginPage.java
 Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\HomePage.java
-Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\HomePage_commands.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\LoginPage.java
+Z:\Automation\JavaCucumber\Login\amazon-crud\src\test\java\pages\selectors\commonPageSelector.java

@@ -1,4 +1,10 @@
 serenity_cucumber\amazon_crud\acceptancetests\AcceptanceTestSuite.class
+pages\LoginPage.class
 serenity_cucumber\amazon_crud\stepdefinitions\login.class
 pages\HomePage.class
-pages\HomePage_commands.class
+customCommands\customCommands.class
+pages\selectors\loginPageSelector.class
+pages\commands\loginPage.class
+pages\selectors\commonPageSelector.class
+pages\commands\homePage.class
+pages\selectors\homePageSelector.class

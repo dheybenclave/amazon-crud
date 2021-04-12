@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login to Amazon" skipped="0" tests="3" time="18.34" timestamp="2021-04-02 09:29:22"><testcase name="Login to Amazaon Website"/><testcase name="Login to Amazaon Website 2"/><testcase name="Login to Amazaon Website 3"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login to Amazon" skipped="0" tests="1" time="8.44" timestamp="2021-04-12 05:00:25"><testcase name="Login to Amazaon Website"><error message="Cannot invoke &quot;String.startsWith(String)&quot; because &quot;xpathOrCssSelector&quot; is null" type="java.lang.NullPointerException">Cannot invoke "String.startsWith(String)" because "xpathOrCssSelector" is null</error><system-err>Cannot invoke "String.startsWith(String)" because "xpathOrCssSelector" is null&#13;
+amazon.crud@0.0.1-SNAPSHOT/customCommands.customCommands.map(customCommands.java:66)&#13;
+amazon.crud@0.0.1-SNAPSHOT/pages.LoginPage.doLogin(LoginPage.java:36)&#13;
+amazon.crud@0.0.1-SNAPSHOT/serenity_cucumber.amazon_crud.stepdefinitions.login.user_enter_as_username_and_enter_as_password(login.java:105)&#13;
+✽.user enter "dheyserenitybdd@gmail.com" as username and enter "config.serenitybdd" as password(file:///Z:/Automation/JavaCucumber/Login/amazon-crud/src/test/resources/features/login/login.feature:6)&#13;
+</system-err></testcase></testsuite>
