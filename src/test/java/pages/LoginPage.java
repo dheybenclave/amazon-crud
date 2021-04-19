@@ -3,6 +3,7 @@ package pages;
 import org.apache.xpath.XPath;
 import org.mockito.internal.matchers.Find;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.interactions.ClickAction;
 
 import customCommands.customCommands;
@@ -13,15 +14,13 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.thucydides.core.annotations.Step;
 import pages.commands.loginPage;
 import pages.selectors.homePageSelector;
+import rest.api.*;
 
 public class LoginPage extends PageObject {
 
 	loginPage login;
 	customCommands api = new customCommands();
 	homePageSelector _s = new homePageSelector();
-	
-	
-
 
 	@Step("Open Applicaiton")
 	public void openApp() {
@@ -34,6 +33,7 @@ public class LoginPage extends PageObject {
 	public void doLogin(String username, String password) {
 
 		api.map("common_account_dropdwn").waitUntilVisible();
+		
 		api.verifyApplication("amazon");
 		clickOn(api.map("common_account_dropdwn"));
 		api.verifyApplication("https://www.amazon.com/ap/signin?");

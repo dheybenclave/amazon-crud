@@ -1,4 +1,5 @@
 serenity_cucumber\amazon_crud\acceptancetests\AcceptanceTestSuite.class
+rest\api\GetData.class
 pages\LoginPage.class
 serenity_cucumber\amazon_crud\stepdefinitions\login.class
 pages\HomePage.class

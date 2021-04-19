@@ -57,8 +57,8 @@ public class customCommands extends PageObject {
 	}
 
 	public WebElementFacade map(String _currSelector) {
+		System.out.println("WebElementFacade[map]: '" + $(_s.get(_currSelector)) + "'");
 		WebElementFacade input = $(_s.get(_currSelector));
-		System.out.println("WebElementFacade - map : '" + input + "'");
 		input.shouldBeVisible();
 		return input;
 	}
@@ -97,7 +97,7 @@ public class customCommands extends PageObject {
 		map(selector).waitUntilVisible(); // findBy(map(selector)).waitUntilVisible();
 		typeInto(map(selector), item);
 		waitForAnyTextToAppear(item);
-		clickOn(map("commonContainerItem" + "commonContainerItem"));
+		clickOn(map("drpdwn_navCoreFlyout" + "drpdwn_navItem"));
 
 		return this;
 

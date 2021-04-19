@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.498 s <<< FAILURE! - in serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
-Login to Amazon.Login to Amazaon Website  Time elapsed: 8.658 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.937 s <<< FAILURE! - in serenity_cucumber.amazon_crud.acceptancetests.AcceptanceTestSuite
+Login to Amazon.Login to Amazaon Website  Time elapsed: 6.473 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "xpathOrCssSelector" is null
 
