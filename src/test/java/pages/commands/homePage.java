@@ -1,17 +1,11 @@
 package pages.commands;
 
-import java.util.HashMap;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
+import api.*;
 import junit.framework.Assert;
 import net.serenitybdd.core.pages.PageObject;
-import net.serenitybdd.core.pages.WebElementFacade;
-import customCommands.customCommands;
 import pages.selectors.*;
-
-import serenity_cucumber.amazon_crud.stepdefinitions.login;
 public class homePage extends PageObject {
 
 	customCommands api = new customCommands();
@@ -24,8 +18,8 @@ public class homePage extends PageObject {
 
 		System.out.println("Setup The Credentials");
 
-		api.setText("email_inpt", username);
-		api.setText("password_inpt", password);
+		api.SeText("email_inpt", username);
+		api.SeText("password_inpt", password);
 
 		clickOn($(_s.get("login_btn")));
 

@@ -10,13 +10,13 @@ public class commonPageSelector {
 	public HashMap<String, String> getSelector() {
 		String[] commonContainer =
 		{
-			"drpdwn_navCoreFlyout : //div[@class='nav-coreFlyout nav-flyout' and @style and not(contains(@style,'display: none'))] ",
+			"drpdwn_navCoreFlyout_container : //div[@class='nav-coreFlyout nav-flyout' and @style and not(contains(@style,'display: none'))] ",
 			"drpdwn_container : //div[@role='dialog' and @style and not(contains(@style,'display: none'))]",
 
 		};
 		String[] commonContainerItem =
 		{
-			"drpdwn_navItem : //a[contains(@class,'nav-item')] ",
+			"drpdwn_navItem_containerItem : //a[contains(@class,'nav-item')] ",
 		};
 
 		String[] commonSelector =

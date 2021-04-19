@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.interactions.ClickAction;
 
-import customCommands.customCommands;
+import api.*;
 import junit.framework.Assert;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;

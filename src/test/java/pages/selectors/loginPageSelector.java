@@ -11,14 +11,14 @@ public class loginPageSelector {
 	 * eg: "view_logo_signIn_btn:nav-link-accountList"
 	 ***/
 
-	public HashMap<String, String> getSelector() {
+	public static String[] loginSelector =
+	{
+		"login_signIn_btn : //span[@id='auth-signin-button' or @id='continue']",
+		"login_email_inpt : //input[@id='ap_email']",
+		"login_password_inpt : //input[@id='ap_password']",
+	};
 
-		String[] loginSelector =
-		{
-			"login_signIn_btn : //span[@id='auth-signin-button' or @id='continue']",
-			"login_email_inpt : //input[@id='ap_email']",
-			"login_password_inpt : //input[@id='ap_password']",
-		};
+	public HashMap<String, String> getSelector() {
 
 		HashMap<String, String> _s = new HashMap<String, String>();
 		for (int i = 0; i < loginSelector.length; i++) {

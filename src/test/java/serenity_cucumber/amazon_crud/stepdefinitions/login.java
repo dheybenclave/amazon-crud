@@ -5,15 +5,18 @@ import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.testng.annotations.BeforeTest;
 
 import cucumber.runtime.SerenityBackend;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.Serenity.SerenityConfigurer;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.pages.PageFactory;
 import pages.HomePage;
 import pages.LoginPage;
 import rest.api.GetData;
@@ -21,14 +24,22 @@ import rest.api.GetData;
 public class login {
 
 	@Managed
-	WebDriver driver;
+	static WebDriver driver;
 
 	@BeforeClass
 	public static void setupClass() {
+
 //		WebDriverManager.chromedriver().clearDriverCache();
 //		WebDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
+//		PageFactory.initElements(driver,this);
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "false");
 
+	}
+
+	@BeforeTest
+	public void LaunchBrowser() {
+		driver.manage().window().maximize();
 	}
 
 	@Before
@@ -48,13 +59,13 @@ public class login {
 
 	@Steps
 	LoginPage login;
-	
+
 	@Steps
 	GetData rest;
 
 	@Given("user in the home page")
 	public void user_in_the_home_page() {
-		
+
 		login.openApp();
 		rest.testResponseCode1();
 	}

@@ -1,11 +1,7 @@
 package pages.commands;
 
-import org.openqa.selenium.By;
-
-import customCommands.customCommands;
-import junit.framework.Assert;
+import api.*;
 import net.serenitybdd.core.pages.PageObject;
-import pages.selectors.homePageSelector;
 
 public class loginPage extends PageObject {
 	customCommands api = new customCommands();
@@ -27,10 +23,10 @@ public class loginPage extends PageObject {
 		System.out.println("3 -async");
 		System.out.println("Setup The Credentials");
 
-		api.setText("login_email_inpt", username);
+		api.SeText("login_email_inpt", username);
 		clickOn(api.map("login_signIn_btn"));
 
-		api.setText("login_password_inpt", password);
+		api.SeText("login_password_inpt", password);
 		clickOn(api.map("login_signIn_btn"));
 
 		return this;
